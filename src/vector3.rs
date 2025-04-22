@@ -1,3 +1,10 @@
+//! Simple 3 dimentional vector
+//! 
+//! provides a struct of 3 64-bit floating point values for the x, y, and z components
+//! of a mathematical vector, along with the standard set of vector operations.
+//! 
+//! This submodule is re-exported as vector::Vector3 in the public API
+
 /* --- IMPORTS --- */
 
 use std::ops::{ Add, Mul, Sub };
