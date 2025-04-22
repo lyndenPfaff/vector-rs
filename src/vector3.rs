@@ -7,7 +7,7 @@
 
 /* --- IMPORTS --- */
 
-use std::ops::{ Add, Mul, Sub };
+use std::ops::{ Add, Mul, Neg, Sub };
 
 /* --- ------- --- */
 
@@ -83,6 +83,14 @@ impl Sub for Vector3 {
             y: self.y - rhs.y,
             z: self.z - rhs.z,
         }
+    }
+}
+
+impl Neg for Vector3 {
+    type Output = Vector3;
+
+    fn neg(self) -> Self::Output {
+        self * -1
     }
 }
 
