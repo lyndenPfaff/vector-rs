@@ -1,3 +1,5 @@
+//! Tests specific to Vector3
+
 /* --- IMPORTS --- */
 
 use crate::Vector3;
