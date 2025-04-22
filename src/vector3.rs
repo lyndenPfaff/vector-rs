@@ -54,11 +54,13 @@ impl Vector3 {
     }
 
 
-    pub fn normalize(mut self) {
+    pub fn normalize(&self) -> Vector3 {
         let len = self.length();
-        self.x /= len;
-        self.y /= len;
-        self.z /= len;
+        Vector3 {
+            x: self.x / len,
+            y: self.y / len,
+            z: self.z / len,
+        }
     }
 
 }
