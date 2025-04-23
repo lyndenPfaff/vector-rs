@@ -1,3 +1,5 @@
+//! Provides an easy to use vector implementation for most general purposes.
+
 /* --- MODULES --- */
 
 mod vector3;
